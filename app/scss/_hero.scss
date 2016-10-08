@@ -1,0 +1,33 @@
+.hero-container {
+    background: url('../assets/bg-nyc.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -5rem;
+    height: 800px;
+
+    .hero-logo {
+      width: 112px;
+      margin-top: 3rem;
+      margin-left: 15.5rem;
+    }
+
+    .hero-content {
+        width: 62%;
+        margin: 0 auto;
+        margin-top: 12rem;
+
+        .hero-header {
+            font-size: 72px;
+            color: #fff;
+            line-height: 70px;
+            margin-bottom: 2rem;
+        }
+
+        .hero-copy {
+            font-size: 18px;
+            color: #fff;
+            line-height: 26px;
+            margin: 0;
+        }
+    }
+}

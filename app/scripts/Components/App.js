@@ -4,7 +4,7 @@ import Hero from './Hero';
 const App = React.createClass({
   render: function () {
     return (
-      <section className="hero-container">
+      <section className="content-container">
         <Hero/>
       </section>
     )
