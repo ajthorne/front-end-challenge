@@ -2,7 +2,6 @@
   background: url("../assets/bg-nyc.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: -5rem;
   height: 800px; }
   .hero-container .hero-logo {
     width: 112px;
@@ -22,6 +21,20 @@
       color: #fff;
       line-height: 26px;
       margin: 0; }
+
+.nav-container {
+  color: #4A4A4A;
+  font-size: 14px;
+  border-bottom: 2px solid #F8F8F8;
+  width: 70%;
+  margin: 0 auto; }
+  .nav-container .nav-list {
+    list-style-type: none; }
+    .nav-container .nav-list .nav-arrow {
+      width: 6px; }
+    .nav-container .nav-list li {
+      display: inline-block;
+      margin-right: 1rem; }
 
 body {
   font-family: helvetica; }
