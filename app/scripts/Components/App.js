@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from './Hero';
 import Nav from './Nav';
 import CategoryNav from './CategoryNav';
+import Airport from './Airport';
 
 const App = React.createClass({
   render: function () {
@@ -10,6 +11,7 @@ const App = React.createClass({
         <Hero/>
         <Nav/>
         <CategoryNav/>
+        <Airport/>
       </section>
     )
   }

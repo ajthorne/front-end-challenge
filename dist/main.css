@@ -28,9 +28,7 @@ body {
 .nav-container {
   color: #4A4A4A;
   font-size: 14px;
-  border-bottom: 2px solid #F8F8F8;
-  width: 70%;
-  margin: 0 auto; }
+  border-bottom: 2px solid #F8F8F8; }
   .nav-container .nav-list {
     list-style-type: none; }
     .nav-container .nav-list .nav-arrow {
@@ -40,9 +38,10 @@ body {
       margin-right: 1rem; }
 
 .category-container {
+  padding-bottom: 5rem;
   margin-bottom: 5rem;
   margin-top: 5rem;
-  border-bottom: #F8F8F8; }
+  border-bottom: 2px solid #F8F8F8; }
   .category-container .category-header {
     font-size: 26px;
     color: #4A4A4A;
@@ -79,6 +78,11 @@ body {
           margin: 0;
           color: #fff;
           font-size: 14px; }
+
+.airport-holder {
+  margin: 0 auto; }
+  .airport-holder .airport-carousel {
+    float: right; }
 
 html {
   height: 100%;
