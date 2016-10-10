@@ -17,9 +17,11 @@ const Cab = React.createClass({
             <li>An Occupied cab will not have any lights on the top on. This means that someone is already in the cab and it can’t stop for you.</li>
             <li>An Off-Duty cab will have all of its lights on the top on. Not only will the light highlighting the cab number be on but the lights on the sides of the topper will be on as well.</li>
           </ol>
+        </div>
+        <div className="cab-howtocopy">
           <h1>How to Use Cabs in New York</h1>
-          <p>Now that you know how to tell if a cab is available you don’t have to go around chasing after taken cabs. If you don’t see any cabs in your area consider walking a block or two to a higher traffic road. Once you spot a cab stick your arm up, you can even try a whistle or two to try to get the cabbie’s attention.</p>
-          <span>LOCAL TIP: If you aren’t going very far make a “C’ with your hand when hailing a cab. It will let them know that you aren’t going far and even an Off-Duty cab might pick you up.</span>
+          <p id="cab-howto1">Now that you know how to tell if a cab is available you don’t have to go around chasing after taken cabs. If you don’t see any cabs in your area consider walking a block or two to a higher traffic road. Once you spot a cab stick your arm up, you can even try a whistle or two to try to get the cabbie’s attention.</p>
+          <p id="cab-tip">LOCAL TIP: If you aren’t going very far make a “C’ with your hand when hailing a cab. It will let them know that you aren’t going far and even an Off-Duty cab might pick you up.</p>
 
           <p>Wait till you get in the cab to give your destination, once you are inside the cab they can’t refuse the trip. When giving your destination don’t give exact addresses. Instead, give landmarks or street corners, if you do this it gives the impression that you are local and they are less likely to “take the long way” to charge you extra.</p>
 

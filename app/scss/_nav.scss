@@ -1,11 +1,11 @@
 .nav-container {
-  color: #4A4A4A;
+  color: $header-gray;
   font-size: 14px;
   border-bottom: 2px solid #F8F8F8;
-  // width: 70%;
-  // margin: 0 auto;
 
   .nav-list {
+    // width: 70%;
+    // margin: 0 auto;
     list-style-type: none;
 
     .nav-arrow {
@@ -15,6 +15,15 @@
     li {
       display: inline-block;
       margin-right: 1rem;
+
+      a {
+        text-decoration: none;
+        color: $header-gray;
+      }
+
+      a:focus::after {
+        border-bottom: 2px solid $highlight;
+      }
     }
   }
 }

@@ -16,6 +16,7 @@
             font-size: 42px;
             color: $header-gray;
             margin: 0;
+            margin-bottom: 1rem;
         }
         span {
             position: absolute;
@@ -33,7 +34,7 @@
         width: 2rem;
         background: $highlight;
         position: absolute;
-        left: 50%;
+        left: 49%;
     }
     .airport-copy {
         // width: 50%;
@@ -59,13 +60,13 @@
         .arrow-holder {
             width: 445px;
             position: absolute;
-            top: 50%;
+            top: 40%;
             .carousel-arrow-left {
-                width: 14px;
+                width: 18px;
                 float: left;
             }
             .carousel-arrow-right {
-                width: 14px;
+                width: 18px;
                 float: right;
             }
         }

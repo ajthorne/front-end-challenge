@@ -1,0 +1,38 @@
+.cab-holder {
+    width: 70%;
+    margin: 0 auto;
+    color: $header-gray;
+    padding-bottom: 5rem;
+    border-bottom: 2px solid $light-gray;
+
+    p {
+      margin-bottom: 2rem;
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+  .cab-copy {
+    margin-bottom: 3rem;
+
+  }
+
+  .cab-howtocopy {
+
+    h1 {
+      font-size: 24px;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+
+    #cab-howto1 {
+      margin-bottom: 0;
+    }
+
+    #cab-tip {
+      margin-top: 0;
+    }
+  }
+}

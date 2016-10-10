@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router';
 
 const Nav = React.createClass({
   render: function () {
@@ -9,7 +10,7 @@ const Nav = React.createClass({
           <li><img className="nav-arrow" src="../../assets/icon-caret-right.png"/></li>
           <li>New York</li>
           <li><img className="nav-arrow" src="../../assets/icon-caret-right.png"/></li>
-          <li>New York City Transportation Guide</li>
+          <li><Link to="#">New York City Transportation Guide</Link></li>
         </ul>
       </nav>
     )

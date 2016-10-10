@@ -36,6 +36,11 @@ body {
     .nav-container .nav-list li {
       display: inline-block;
       margin-right: 1rem; }
+      .nav-container .nav-list li a {
+        text-decoration: none;
+        color: #4A4A4A; }
+      .nav-container .nav-list li a:focus::after {
+        border-bottom: 2px solid #1CBEEC; }
 
 .category-container {
   padding-bottom: 5rem;
@@ -92,7 +97,8 @@ body {
     .airport-holder .airport-header h1 {
       font-size: 42px;
       color: #4A4A4A;
-      margin: 0; }
+      margin: 0;
+      margin-bottom: 1rem; }
     .airport-holder .airport-header span {
       position: absolute;
       color: #F8F8F8;
@@ -107,7 +113,7 @@ body {
     width: 2rem;
     background: #1CBEEC;
     position: absolute;
-    left: 50%; }
+    left: 49%; }
   .airport-holder .airport-copy {
     font-size: 16px;
     color: #4A4A4A;
@@ -126,12 +132,12 @@ body {
     .airport-holder .carousel-holder .arrow-holder {
       width: 445px;
       position: absolute;
-      top: 50%; }
+      top: 40%; }
       .airport-holder .carousel-holder .arrow-holder .carousel-arrow-left {
-        width: 14px;
+        width: 18px;
         float: left; }
       .airport-holder .carousel-holder .arrow-holder .carousel-arrow-right {
-        width: 14px;
+        width: 18px;
         float: right; }
   .airport-holder .airport-carousel {
     width: 370px;
@@ -145,6 +151,28 @@ body {
         display: block; }
     .airport-holder .airport-carousel .carousel-img {
       width: 100%; }
+
+.cab-holder {
+  width: 70%;
+  margin: 0 auto;
+  color: #4A4A4A;
+  padding-bottom: 5rem;
+  border-bottom: 2px solid #F8F8F8; }
+  .cab-holder p {
+    margin-bottom: 2rem;
+    font-size: 16px;
+    line-height: 26px; }
+  .cab-holder .cab-copy {
+    margin-bottom: 3rem; }
+  .cab-holder .cab-howtocopy h1 {
+    font-size: 24px; }
+  .cab-holder .cab-howtocopy h3 {
+    font-size: 20px;
+    margin-bottom: 0; }
+  .cab-holder .cab-howtocopy #cab-howto1 {
+    margin-bottom: 0; }
+  .cab-holder .cab-howtocopy #cab-tip {
+    margin-top: 0; }
 
 html {
   height: 100%;

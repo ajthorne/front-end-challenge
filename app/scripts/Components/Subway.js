@@ -10,6 +10,8 @@ const Subway = React.createClass({
           <span>Subway</span>
         </div>
         <div className="subway-copy">
+          <img src="../../assets/nyc-transit-map.png"/>
+
           <p>The Subway is the most popular mode of transportation in New York City. There are tons of access points and stops to get you around town if you’re in a hurry. Using the subway can seem stressful but it shouldn’t be intimidating. If you aren’t sure what train to take you can look at a subway map that is on the wall in every subway station.</p>
 
           <p>There are two types of trains, “local” which means they stop at every stop on their route and “express” which will skip stops in order to get you to a set destination faster. If you mix these up you could end up on the other side of town so be sure to check the train before getting on.</p>
