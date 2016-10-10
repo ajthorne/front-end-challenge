@@ -1,12 +1,14 @@
 .nav-container {
-  color: $header-gray;
+  color: $primary-copy;
   font-size: 14px;
   border-bottom: 2px solid #F8F8F8;
 
   .nav-list {
-    // width: 70%;
-    // margin: 0 auto;
+    width: 62%;
+    text-align: center;
     list-style-type: none;
+    padding-left: 5rem;
+
 
     .nav-arrow {
       width: 6px;
@@ -18,7 +20,7 @@
 
       a {
         text-decoration: none;
-        color: $header-gray;
+        color: $primary-copy;
       }
 
       a:focus::after {

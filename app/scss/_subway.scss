@@ -1,8 +1,5 @@
 .subway-holder {
-    width: 70%;
-    margin: 0 auto;
-    //use mixin;
-    color: $header-gray;
+    @include centeredholder;
     padding-bottom: 5rem;
     border-bottom: 2px solid $light-gray;
 
@@ -11,18 +8,16 @@
 
     }
     p {
-        margin-bottom: 2rem;
-        font-size: 16px;
-        line-height: 26px;
+      @include copy-main-style;
     }
     .subway-copy {
         box-sizing: border-box;
         margin-bottom: 5rem;
-        //use mixin for this
+        
         .subway-map-holder {
             width: 410px;
             float: right;
-            box-shadow: 0 6px 30px 0 #F4F4F4;
+            box-shadow: $boxshadow;
             margin-top: 0;
             margin-left: 5rem;
             figcaption {

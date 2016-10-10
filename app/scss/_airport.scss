@@ -1,30 +1,24 @@
 .airport-holder {
-    width: 70%;
-    margin: 0 auto;
-    border-bottom: 2px solid $light-gray;
-    //need to fix border to full width
+    @include centeredholder;
+    border-bottom: $bottom-border;
 
     .airport-header {
-        // width: 50%;
         text-align: center;
         position: relative;
         margin-bottom: 5rem;
+
         img {
             width: 80px;
         }
+
         h1 {
             font-size: 42px;
-            color: $header-gray;
+            color: $primary-copy;
             margin: 0;
             margin-bottom: 1rem;
         }
         span {
-            position: absolute;
-            color: $light-gray;
-            z-index: -1;
-            left: 15%;
-            font-size: 192px;
-            top: -75px;
+          @include text-shadow-span;
         }
     }
     .airport-header:after {
@@ -37,20 +31,13 @@
         left: 49%;
     }
     .airport-copy {
-        // width: 50%;
-        font-size: 16px;
-        color: $header-gray;
-        line-height: 26px;
-        margin-bottom: 5rem;
+        @include copy-main-style;
 
         .airport-highlight {
             color: $highlight;
         }
-
-        p {
-          margin-bottom: 2rem;
-        }
     }
+
     .carousel-holder {
         float: right;
         width: 50%;
@@ -73,13 +60,13 @@
     }
     .airport-carousel {
         width: 370px;
-        box-shadow: 0 6px 30px 0 #F4F4F4;
+        box-shadow: $boxshadow;
         margin-bottom: 4rem;
 
         figcaption {
             padding: 5%;
             font-size: 14px;
-            color: $header-gray;
+            color: $primary-copy;
             span {
                 display: block;
             }

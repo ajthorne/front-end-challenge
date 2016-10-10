@@ -1,9 +1,10 @@
 .hero-container {
-    background: url('../assets/bg-nyc.png');
+    background: url('../assets/bg-nyc.png') center center;
     background-repeat: no-repeat;
     background-size: cover;
     // background-position-y: -5rem;
-    height: 800px;
+    // overflow: hidden;
+    height: 760px;
 
     .hero-logo {
       width: 112px;
@@ -12,22 +13,24 @@
     }
 
     .hero-content {
-        width: 62%;
-        margin: 0 auto;
+        @include centeredholder;
         margin-top: 12rem;
+        padding-left: 5rem;
 
         .hero-header {
             font-size: 72px;
-            color: #fff;
+            color: $white;
             line-height: 70px;
             margin-bottom: 2rem;
+            font-weight: bold;
         }
 
         .hero-copy {
             font-size: 18px;
-            color: #fff;
+            color: $white;
             line-height: 26px;
             margin: 0;
+            width: 75%;
         }
     }
 }

@@ -1,46 +1,61 @@
 .category-container {
-    padding-bottom: 5rem;
+    padding-bottom: 8rem;
     margin-bottom: 5rem;
-    margin-top: 5rem;
-    border-bottom: 2px solid $light-gray;
+    margin-top: 8rem;
+    border-bottom: $bottom-border;
 
     .category-header {
         font-size: 26px;
-        color: $header-gray;
+        color: $primary-copy;
         text-align: center;
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
     }
 
     .category-list {
         list-style-type: none;
         padding-left: 0;
-        width: 75%;
+        width: 70%;
         margin: 0 auto;
         box-sizing: border-box;
         display: flex;
+        // justify-content: space-between;
 
         li {
-            flex-basis: 20%;
-            margin-right: 2rem;
+            flex-basis: 21%;
+            margin-right: 1.5rem;
             position: relative;
             text-align: center;
-            padding: 2rem;
-            border: 2px solid $white;
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-top: 5%;
+            padding-bottom: 4%;
             border-radius: 5px;
             box-shadow: 0 0 10px 0 #F4F4F4;
 
+            #plane-icon {
+              width: 110%;
+              padding-right: 2%;
+            }
+
+            #subway-icon {
+              width: 60%;
+            }
+
             img {
-                width: 60%;
+                width: 70%;
             }
 
             div {
                 position: absolute;
                 width: 70%;
                 border-radius: 20px;
-                padding: 3%;
+                padding-left: 5%;
+                padding-right: 5%;
+                padding-top: 3%;
+                padding-bottom: 3%;
                 background: $highlight;
                 bottom: -1rem;
-                left: 8%;
+                left: 10%;
 
                 p {
                     text-align: center;

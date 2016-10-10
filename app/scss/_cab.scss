@@ -1,19 +1,15 @@
 .cab-holder {
-    width: 70%;
-    margin: 0 auto;
-    color: $header-gray;
+    @include centeredholder;
+    color: $primary-copy;
     padding-bottom: 5rem;
-    border-bottom: 2px solid $light-gray;
+    border-bottom: $bottom-border;
 
     p {
-      margin-bottom: 2rem;
-      font-size: 16px;
-      line-height: 26px;
+      @include copy-main-style;
     }
 
   .cab-copy {
     margin-bottom: 3rem;
-
   }
 
   .cab-howtocopy {
