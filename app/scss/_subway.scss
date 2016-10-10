@@ -1,19 +1,40 @@
 .subway-holder {
-    @include centeredholder;
-    padding-bottom: 5rem;
-    border-bottom: 2px solid $light-gray;
+  @include container-spacing;
 
+
+    .subway-inner-holder{
+      @include centeredholder;
+    }
 
     .subway-header {
+          text-align: center;
+          position: relative;
+          margin-bottom: 8rem;
+          img {
+              width: 40px;
+          }
+          h1 {
+              font-size: 42px;
+              color: $primary-copy;
+              margin: 0 0 1rem;
+          }
+          span {
+              @include text-shadow-span;
+              // left: 12%;
+          }
+      }
+      .subway-header:after {
+          @include header-after-line;
+      }
 
-    }
-    p {
-      @include copy-main-style;
-    }
+      p {
+        @include copy-main-style;
+      }
+
     .subway-copy {
         box-sizing: border-box;
         margin-bottom: 5rem;
-        
+
         .subway-map-holder {
             width: 410px;
             float: right;

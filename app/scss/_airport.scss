@@ -1,43 +1,36 @@
 .airport-holder {
-    @include centeredholder;
-    border-bottom: $bottom-border;
+  @include container-spacing;
+
+
+    .airport-inner-holder {
+      @include centeredholder;
+    }
 
     .airport-header {
         text-align: center;
         position: relative;
-        margin-bottom: 5rem;
-
+        margin-bottom: 8rem;
         img {
             width: 80px;
         }
-
         h1 {
             font-size: 42px;
             color: $primary-copy;
-            margin: 0;
-            margin-bottom: 1rem;
+            margin: 0 0 1rem;
         }
         span {
-          @include text-shadow-span;
+            @include text-shadow-span;
         }
     }
     .airport-header:after {
-        content: '';
-        display: block;
-        height: 0.2rem;
-        width: 2rem;
-        background: $highlight;
-        position: absolute;
-        left: 49%;
+        @include header-after-line;
     }
     .airport-copy {
         @include copy-main-style;
-
         .airport-highlight {
             color: $highlight;
         }
     }
-
     .carousel-holder {
         float: right;
         width: 50%;
@@ -62,7 +55,6 @@
         width: 370px;
         box-shadow: $boxshadow;
         margin-bottom: 4rem;
-
         figcaption {
             padding: 5%;
             font-size: 14px;

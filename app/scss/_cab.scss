@@ -1,34 +1,49 @@
 .cab-holder {
-    @include centeredholder;
-    color: $primary-copy;
-    padding-bottom: 5rem;
-    border-bottom: $bottom-border;
+  @include container-spacing;
 
+    .cab-inner-holder {
+        @include centeredholder;
+    }
     p {
-      @include copy-main-style;
+        @include copy-main-style;
     }
-
-  .cab-copy {
-    margin-bottom: 3rem;
-  }
-
-  .cab-howtocopy {
-
-    h1 {
-      font-size: 24px;
+    .cab-header {
+        text-align: center;
+        position: relative;
+        margin-bottom: 8rem;
+        img {
+            width: 50px;
+        }
+        h1 {
+            font-size: 42px;
+            color: $primary-copy;
+            margin: 0 0 1rem;
+        }
+        span {
+            @include text-shadow-span;
+            // left: 28%;
+        }
     }
-
-    h3 {
-      font-size: 20px;
-      margin-bottom: 0;
+    .cab-header:after {
+        @include header-after-line;
     }
-
-    #cab-howto1 {
-      margin-bottom: 0;
+    .cab-copy {
+        @include copy-main-style;
+        margin-bottom: 3rem;
     }
-
-    #cab-tip {
-      margin-top: 0;
+    .cab-howtocopy {
+        h1 {
+            font-size: 24px;
+        }
+        h3 {
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+        #cab-howto1 {
+            margin-bottom: 0;
+        }
+        #cab-tip {
+            margin-top: 0;
+        }
     }
-  }
 }
