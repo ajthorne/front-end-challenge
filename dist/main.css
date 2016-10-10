@@ -216,6 +216,18 @@ body {
     .subway-holder .subway-howtocopy .subway-flexholder .subway-flexcopy {
       flex-basis: 45%; }
 
+footer {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  margin-top: 5rem; }
+  footer .footer-info {
+    margin-bottom: 5rem; }
+  footer .footer-copyright {
+    font-weight: bold; }
+
 html {
   height: 100%;
   margin: 0;
