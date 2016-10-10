@@ -62,7 +62,7 @@ body {
       padding: 2rem;
       border: 2px solid #fff;
       border-radius: 5px;
-      box-shadow: 1px 1px 10px #F4F4F4; }
+      box-shadow: 0 0 10px 0 #F4F4F4; }
       .category-container .category-list li img {
         width: 60%; }
       .category-container .category-list li div {
@@ -80,10 +80,10 @@ body {
           font-size: 14px; }
 
 .airport-holder {
-  width: 75%;
-  margin: 0 auto; }
+  width: 70%;
+  margin: 0 auto;
+  border-bottom: 2px solid #F8F8F8; }
   .airport-holder .airport-header {
-    width: 50%;
     text-align: center;
     position: relative;
     margin-bottom: 5rem; }
@@ -111,9 +111,12 @@ body {
   .airport-holder .airport-copy {
     font-size: 16px;
     color: #4A4A4A;
-    line-height: 26px; }
+    line-height: 26px;
+    margin-bottom: 5rem; }
     .airport-holder .airport-copy .airport-highlight {
       color: #1CBEEC; }
+    .airport-holder .airport-copy p {
+      margin-bottom: 2rem; }
   .airport-holder .carousel-holder {
     float: right;
     width: 50%;
@@ -132,7 +135,8 @@ body {
         float: right; }
   .airport-holder .airport-carousel {
     width: 370px;
-    box-shadow: 1px 1px 10px #F4F4F4; }
+    box-shadow: 0 6px 30px 0 #F4F4F4;
+    margin-bottom: 4rem; }
     .airport-holder .airport-carousel figcaption {
       padding: 5%;
       font-size: 14px;

@@ -1,14 +1,15 @@
 .airport-holder {
-    width: 75%;
+    width: 70%;
     margin: 0 auto;
+    border-bottom: 2px solid $light-gray;
+    //need to fix border to full width
 
     .airport-header {
-        width: 50%;
+        // width: 50%;
         text-align: center;
         position: relative;
         margin-bottom: 5rem;
         img {
-            // z-index: 1;
             width: 80px;
         }
         h1 {
@@ -39,8 +40,14 @@
         font-size: 16px;
         color: $header-gray;
         line-height: 26px;
+        margin-bottom: 5rem;
+
         .airport-highlight {
             color: $highlight;
+        }
+
+        p {
+          margin-bottom: 2rem;
         }
     }
     .carousel-holder {
@@ -65,7 +72,9 @@
     }
     .airport-carousel {
         width: 370px;
-        box-shadow: 1px 1px 10px #F4F4F4;
+        box-shadow: 0 6px 30px 0 #F4F4F4;
+        margin-bottom: 4rem;
+
         figcaption {
             padding: 5%;
             font-size: 14px;
