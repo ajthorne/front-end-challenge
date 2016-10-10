@@ -174,6 +174,48 @@ body {
   .cab-holder .cab-howtocopy #cab-tip {
     margin-top: 0; }
 
+.subway-holder {
+  width: 70%;
+  margin: 0 auto;
+  color: #4A4A4A;
+  padding-bottom: 5rem;
+  border-bottom: 2px solid #F8F8F8; }
+  .subway-holder p {
+    margin-bottom: 2rem;
+    font-size: 16px;
+    line-height: 26px; }
+  .subway-holder .subway-copy {
+    box-sizing: border-box;
+    margin-bottom: 5rem; }
+    .subway-holder .subway-copy .subway-map-holder {
+      width: 410px;
+      float: right;
+      box-shadow: 0 6px 30px 0 #F4F4F4;
+      margin-top: 0;
+      margin-left: 5rem; }
+      .subway-holder .subway-copy .subway-map-holder figcaption {
+        padding: 4%; }
+      .subway-holder .subway-copy .subway-map-holder p {
+        margin: 0; }
+      .subway-holder .subway-copy .subway-map-holder img {
+        width: 100%; }
+  .subway-holder .subway-howtocopy h1 {
+    text-align: center;
+    font-size: 24px; }
+  .subway-holder .subway-howtocopy h3 {
+    font-size: 20px;
+    margin-bottom: 0; }
+  .subway-holder .subway-howtocopy #subway-intro-center {
+    text-align: center;
+    margin-bottom: 5rem; }
+  .subway-holder .subway-howtocopy .subway-flexholder {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-between; }
+    .subway-holder .subway-howtocopy .subway-flexholder .subway-flexcopy {
+      flex-basis: 45%; }
+
 html {
   height: 100%;
   margin: 0;

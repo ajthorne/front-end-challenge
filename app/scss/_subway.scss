@@ -1,0 +1,62 @@
+.subway-holder {
+    width: 70%;
+    margin: 0 auto;
+    //use mixin;
+    color: $header-gray;
+    padding-bottom: 5rem;
+    border-bottom: 2px solid $light-gray;
+
+
+    .subway-header {
+
+    }
+    p {
+        margin-bottom: 2rem;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .subway-copy {
+        box-sizing: border-box;
+        margin-bottom: 5rem;
+        //use mixin for this
+        .subway-map-holder {
+            width: 410px;
+            float: right;
+            box-shadow: 0 6px 30px 0 #F4F4F4;
+            margin-top: 0;
+            margin-left: 5rem;
+            figcaption {
+                padding: 4%;
+            }
+            p {
+                margin: 0;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .subway-howtocopy {
+        h1 {
+            text-align: center;
+            font-size: 24px;
+        }
+        h3 {
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+        #subway-intro-center {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+        .subway-flexholder {
+            display: flex;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            justify-content: space-between;
+            .subway-flexcopy {
+                flex-basis: 45%;
+            }
+        }
+    }
+}

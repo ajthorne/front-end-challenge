@@ -10,7 +10,10 @@ const Subway = React.createClass({
           <span>Subway</span>
         </div>
         <div className="subway-copy">
-          <img src="../../assets/nyc-transit-map.png"/>
+          <figure className="subway-map-holder">
+            <img src="../../assets/nyc-transit-map.png"/>
+            <figcaption>New York City Subway System<p>New York City, New York</p></figcaption>
+          </figure>
 
           <p>The Subway is the most popular mode of transportation in New York City. There are tons of access points and stops to get you around town if you’re in a hurry. Using the subway can seem stressful but it shouldn’t be intimidating. If you aren’t sure what train to take you can look at a subway map that is on the wall in every subway station.</p>
 
@@ -27,7 +30,7 @@ const Subway = React.createClass({
         <div className="subway-howtocopy">
           <h1>How to Ride the Subway in New York</h1>
 
-          <p>Once you find the correct station that you need to be at you can enter the station with a MetroCard. If you don’t have a card and need one you can purchase one from the station operators booth or a MetroCard Vending Machine.</p>
+          <p id="subway-intro-center">Once you find the correct station that you need to be at you can enter the station with a MetroCard. If you don’t have a card and need one you can purchase one from the station operators booth or a MetroCard Vending Machine.</p>
 
           <div className="subway-flexholder">
             <div className="subway-flexcopy">
