@@ -25,15 +25,42 @@
       margin: 0;
       width: 75%; }
 
+@media only screen and (max-width: 800px) {
+  .hero-container .hero-logo {
+    margin-left: 10.5rem; }
+  .hero-container .hero-content .hero-header {
+    font-size: 64px; }
+  .hero-container .hero-content .hero-copy {
+    width: 100%; } }
+@media only screen and (max-width: 635px) {
+  .hero-container .hero-logo {
+    margin-left: 8rem; }
+  .hero-container .hero-content .hero-header {
+    font-size: 42px;
+    line-height: 50px; }
+  .hero-container .hero-content .hero-copy {
+    font-size: 16px; } }
+@media only screen and (max-width: 480px) {
+  .hero-container {
+    height: 700px; }
+    .hero-container .hero-logo {
+      margin-left: 2rem; }
+    .hero-container .hero-content {
+      margin-top: 5rem;
+      width: 85%;
+      padding-left: 0; }
+      .hero-container .hero-content .hero-header {
+        font-size: 36px;
+        line-height: 44px; }
+      .hero-container .hero-content .hero-copy {
+        font-size: 16px; } }
 .nav-container {
   color: #4A4A4A;
   font-size: 14px;
   border-bottom: 2px solid #F8F8F8; }
   .nav-container .nav-list {
-    width: 62%;
-    text-align: center;
     list-style-type: none;
-    padding-left: 5rem; }
+    margin-left: 15%; }
     .nav-container .nav-list .nav-arrow {
       width: 6px; }
     .nav-container .nav-list li {
@@ -50,8 +77,17 @@
         width: 100%;
         background: #1CBEEC;
         position: absolute;
-        margin-top: 0.6rem; }
+        bottom: -0.8rem; }
 
+@media only screen and (max-width: 800px) {
+  .nav-container .nav-list {
+    margin-left: 5%; } }
+@media only screen and (max-width: 635px) {
+  .nav-container {
+    font-size: 12px; }
+
+  .nav-list {
+    padding-left: 0; } }
 .category-container {
   padding-bottom: 10rem;
   margin-bottom: 8rem;
@@ -63,26 +99,22 @@
     text-align: center;
     margin-bottom: 4rem; }
   .category-container .category-list {
-    list-style-type: none;
-    padding-left: 0;
     width: 70%;
     margin: 0 auto;
+    list-style-type: none;
+    padding-left: 0;
     box-sizing: border-box;
     display: flex; }
     .category-container .category-list li {
       flex-basis: 21%;
-      margin-right: 1.5rem;
       position: relative;
       text-align: center;
-      padding-left: 4%;
-      padding-right: 4%;
-      padding-top: 5%;
-      padding-bottom: 4%;
+      padding: 3rem 2rem 2rem;
       border-radius: 5px;
       box-shadow: 0 0 10px 0 #F4F4F4; }
       .category-container .category-list li #plane-icon {
         width: 110%;
-        padding-right: 2%; }
+        padding-right: 2rem; }
       .category-container .category-list li #subway-icon {
         width: 60%; }
       .category-container .category-list li img {
@@ -91,10 +123,7 @@
         position: absolute;
         width: 70%;
         border-radius: 20px;
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-top: 3%;
-        padding-bottom: 3%;
+        padding: 3% 5%;
         background: #1CBEEC;
         bottom: -1rem;
         left: 10%; }
@@ -103,7 +132,47 @@
           margin: 0;
           color: #fff;
           font-size: 14px; }
+    .category-container .category-list li:not(:last-child) {
+      margin-right: 1.5rem; }
 
+@media only screen and (max-width: 975px) {
+  .category-container .category-list {
+    width: 90%; } }
+@media only screen and (max-width: 635px) {
+  .category-container .category-header {
+    font-size: 26px; }
+  .category-container .category-list {
+    width: 95%; }
+    .category-container .category-list li {
+      padding: 2rem 1rem 1rem; } }
+@media only screen and (max-width: 525px) {
+  .category-container {
+    margin-bottom: 8rem;
+    margin-top: 5rem; }
+    .category-container .category-header {
+      font-size: 22px;
+      margin-bottom: 2rem; }
+    .category-container .category-list li {
+      padding: 2rem 1rem 1rem; }
+      .category-container .category-list li div p {
+        font-size: 10px; } }
+@media only screen and (max-width: 480px) {
+  .category-container .category-list li {
+    padding: 1rem 1rem 0.5rem; }
+    .category-container .category-list li div p {
+      font-size: 10px; } }
+@media only screen and (max-width: 400px) {
+  .category-container {
+    padding-bottom: 5rem;
+    margin-top: 3rem; }
+    .category-container .category-header {
+      font-size: 18px; }
+    .category-container .category-list li {
+      padding: 0.5rem 0.5rem 0.3rem; }
+      .category-container .category-list li #plane-icon {
+        padding-right: 0; }
+      .category-container .category-list li div {
+        display: none; } }
 .airport-holder {
   margin-top: 8rem;
   padding-bottom: 5rem;
@@ -128,7 +197,7 @@
       width: 100%;
       left: 0;
       font-size: 192px;
-      top: -110px; }
+      top: -90%; }
   .airport-holder .airport-header:after {
     content: '';
     display: block;
@@ -173,6 +242,34 @@
     .airport-holder .airport-carousel .carousel-img {
       width: 100%; }
 
+@media only screen and (max-width: 860px) {
+  .airport-holder .airport-header span {
+    font-size: 20vw;
+    top: -40%; }
+  .airport-holder .carousel-holder .arrow-holder {
+    width: 47vw; }
+    .airport-holder .carousel-holder .arrow-holder .carousel-arrow-left {
+      width: 14px;
+      float: left; }
+    .airport-holder .carousel-holder .arrow-holder .carousel-arrow-right {
+      width: 14px;
+      float: right; }
+  .airport-holder .airport-carousel {
+    width: 35vw; }
+    .airport-holder .airport-carousel figcaption {
+      font-size: 12px; } }
+@media only screen and (max-width: 480px) {
+  .airport-holder .airport-header span {
+    top: 15%; }
+  .airport-holder .airport-header img {
+    width: 70px; }
+  .airport-holder .airport-carousel {
+    width: 50vw; }
+  .airport-holder .carousel-holder {
+    float: none;
+    margin-left: 0; }
+    .airport-holder .carousel-holder .arrow-holder {
+      width: 70vw; } }
 .cab-holder {
   margin-top: 8rem;
   padding-bottom: 5rem;
@@ -202,7 +299,7 @@
       width: 100%;
       left: 0;
       font-size: 192px;
-      top: -110px; }
+      top: -90%; }
   .cab-holder .cab-header:after {
     content: '';
     display: block;
@@ -227,6 +324,21 @@
   .cab-holder .cab-howtocopy #cab-tip {
     margin-top: 0; }
 
+@media only screen and (max-width: 600px) {
+  .cab-holder .cab-header {
+    margin-bottom: 5rem; }
+    .cab-holder .cab-header span {
+      font-size: 20vw;
+      top: -15%; }
+  .cab-holder .cab-header::after {
+    left: 45%; } }
+@media only screen and (max-width: 480px) {
+  .cab-holder {
+    margin-top: 5rem; }
+    .cab-holder .cab-header span {
+      top: 10%; }
+    .cab-holder .cab-header img {
+      width: 40px; } }
 .subway-holder {
   margin-top: 8rem;
   padding-bottom: 5rem;
@@ -251,7 +363,7 @@
       width: 100%;
       left: 0;
       font-size: 192px;
-      top: -110px; }
+      top: -90%; }
   .subway-holder .subway-header:after {
     content: '';
     display: block;
@@ -275,9 +387,11 @@
       margin-top: 0;
       margin-left: 5rem; }
       .subway-holder .subway-copy .subway-map-holder figcaption {
-        padding: 4%; }
+        padding: 4%;
+        font-size: 14px; }
       .subway-holder .subway-copy .subway-map-holder p {
-        margin: 0; }
+        margin: 0;
+        font-size: 14px; }
       .subway-holder .subway-copy .subway-map-holder img {
         width: 100%; }
   .subway-holder .subway-howtocopy h1 {
@@ -297,6 +411,42 @@
     .subway-holder .subway-howtocopy .subway-flexholder .subway-flexcopy {
       flex-basis: 45%; }
 
+@media only screen and (max-width: 900px) {
+  .subway-holder .subway-header span {
+    font-size: 18vw;
+    top: -68%; }
+  .subway-holder .subway-copy .subway-map-holder {
+    width: 45vw;
+    margin-left: 3rem; } }
+@media only screen and (max-width: 635px) {
+  .subway-holder .subway-header span {
+    top: -20%; }
+  .subway-holder .subway-copy .subway-map-holder {
+    width: 35vw;
+    margin-left: 1rem; } }
+@media only screen and (max-width: 520px) {
+  .subway-holder .subway-header span {
+    top: 0; }
+  .subway-holder .subway-copy .subway-map-holder figcaption {
+    font-size: 11px; }
+  .subway-holder .subway-copy .subway-map-holder p {
+    font-size: 11px; }
+  .subway-holder .subway-howtocopy .subway-flexholder .subway-flexcopy {
+    flex-basis: 100%; } }
+@media only screen and (max-width: 400px) {
+  .subway-holder .subway-header {
+    margin-bottom: 5rem; }
+    .subway-holder .subway-header h1 {
+      font-size: 36px; }
+    .subway-holder .subway-header span {
+      top: 15px; }
+    .subway-holder .subway-header img {
+      width: 30px; }
+  .subway-holder .subway-header::after {
+    left: 45%; }
+  .subway-holder .subway-copy .subway-map-holder {
+    float: none;
+    width: 60vw; } }
 footer {
   width: 70%;
   margin: 0 auto;

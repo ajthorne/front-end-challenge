@@ -1,11 +1,8 @@
 .airport-holder {
-  @include container-spacing;
-
-
+    @include container-spacing;
     .airport-inner-holder {
-      @include centeredholder;
+        @include centeredholder;
     }
-
     .airport-header {
         text-align: center;
         position: relative;
@@ -65,6 +62,59 @@
         }
         .carousel-img {
             width: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 860px) {
+    .airport-holder {
+        .airport-header {
+            span {
+              font-size: 20vw;
+              top: -40%;
+            }
+        }
+        .carousel-holder {
+            .arrow-holder {
+                width: 47vw;
+                .carousel-arrow-left {
+                    width: 14px;
+                    float: left;
+                }
+                .carousel-arrow-right {
+                    width: 14px;
+                    float: right;
+                }
+            }
+        }
+        .airport-carousel {
+            width: 35vw;
+            figcaption {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .airport-holder {
+        .airport-header {
+            span {
+              top: 15%;
+            }
+
+            img {
+              width: 70px;
+            }
+        }
+        .airport-carousel {
+            width: 50vw;
+        }
+        .carousel-holder {
+            float: none;
+            margin-left: 0;
+            .arrow-holder {
+                width: 70vw;
+            }
         }
     }
 }

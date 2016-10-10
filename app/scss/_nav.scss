@@ -1,13 +1,11 @@
 .nav-container {
   color: $primary-copy;
   font-size: 14px;
-  border-bottom: 2px solid #F8F8F8;
+  border-bottom: $bottom-border;
 
   .nav-list {
-    width: 62%;
-    text-align: center;
     list-style-type: none;
-    padding-left: 5rem;
+    margin-left: 15%;
 
 
     .nav-arrow {
@@ -31,8 +29,29 @@
         width: 100%;
         background: $highlight;
         position: absolute;
-        margin-top: 0.6rem;
+        bottom: -0.8rem;
       }
     }
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .nav-container {
+
+    .nav-list {
+      margin-left: 5%;
+    }
+  }
+}
+
+@media only screen and (max-width: 635px) {
+  .nav-container {
+    font-size: 12px;
+  }
+
+  .nav-list {
+    padding-left: 0;
+  }
+}
+
+//for mobile device screen sizes, I might implement icons rather than text because making the font any smaller lacks readability, but ideally I'd keep the nav on "one line" rather than having it take up more space vertically.

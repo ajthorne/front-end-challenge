@@ -1,40 +1,33 @@
 .subway-holder {
-  @include container-spacing;
-
-
-    .subway-inner-holder{
-      @include centeredholder;
+    @include container-spacing;
+    .subway-inner-holder {
+        @include centeredholder;
     }
-
     .subway-header {
-          text-align: center;
-          position: relative;
-          margin-bottom: 8rem;
-          img {
-              width: 40px;
-          }
-          h1 {
-              font-size: 42px;
-              color: $primary-copy;
-              margin: 0 0 1rem;
-          }
-          span {
-              @include text-shadow-span;
-              // left: 12%;
-          }
-      }
-      .subway-header:after {
-          @include header-after-line;
-      }
-
-      p {
+        text-align: center;
+        position: relative;
+        margin-bottom: 8rem;
+        img {
+            width: 40px;
+        }
+        h1 {
+            font-size: 42px;
+            color: $primary-copy;
+            margin: 0 0 1rem;
+        }
+        span {
+            @include text-shadow-span;
+        }
+    }
+    .subway-header:after {
+        @include header-after-line;
+    }
+    p {
         @include copy-main-style;
-      }
-
+    }
     .subway-copy {
         box-sizing: border-box;
         margin-bottom: 5rem;
-
         .subway-map-holder {
             width: 410px;
             float: right;
@@ -43,9 +36,11 @@
             margin-left: 5rem;
             figcaption {
                 padding: 4%;
+                font-size: 14px;
             }
             p {
                 margin: 0;
+                font-size: 14px;
             }
             img {
                 width: 100%;
@@ -75,4 +70,90 @@
             }
         }
     }
+}
+@media only screen and (max-width: 900px) {
+    .subway-holder {
+        .subway-header {
+            span {
+                font-size: 18vw;
+                top: -68%;
+            }
+        }
+        .subway-copy {
+            .subway-map-holder {
+                width: 45vw;
+                margin-left: 3rem;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 635px) {
+    .subway-holder {
+        .subway-header {
+            span {
+                top: -20%;
+            }
+        }
+        .subway-copy {
+            .subway-map-holder {
+                width: 35vw;
+                margin-left: 1rem;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 520px) {
+    .subway-holder {
+      .subway-header {
+        span {
+          top:0;
+        }
+      }
+      .subway-copy {
+          .subway-map-holder {
+            figcaption {
+              font-size: 11px;
+            }
+            p {
+              font-size: 11px;
+            }
+
+          }
+        }
+        .subway-howtocopy {
+            .subway-flexholder {
+                .subway-flexcopy {
+                    flex-basis: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+  .subway-holder {
+    .subway-header {
+      margin-bottom: 5rem;
+
+      h1 {
+        font-size: 36px;
+      }
+      span {
+        top: 15px;
+      }
+      img {
+        width: 30px;
+      }
+    }
+
+    .subway-header::after {
+      left: 45%;
+    }
+    .subway-copy {
+      .subway-map-holder {
+        float:none;
+        width: 60vw;
+      }
+    }
+  }
 }

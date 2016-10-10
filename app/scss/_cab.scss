@@ -47,3 +47,32 @@
         }
     }
 }
+@media only screen and (max-width: 600px) {
+  .cab-holder {
+      .cab-header {
+        margin-bottom: 5rem;
+          span {
+            font-size: 20vw;
+            top: -15%;
+          }
+      }
+      .cab-header::after {
+        left: 45%;
+      }
+}
+}
+
+@media only screen and (max-width:480px) {
+  .cab-holder {
+    margin-top: 5rem;
+      .cab-header {
+          span {
+            top: 10%;
+          }
+
+          img {
+            width: 40px;
+          }
+        }
+      }
+}

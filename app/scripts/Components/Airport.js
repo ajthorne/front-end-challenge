@@ -1,5 +1,10 @@
 import React from 'react';
 
+const images = [
+  '../../assets/carousel-hangars.png',
+  '../../assets/carousel-terminal.png'
+];
+
 const Airport = React.createClass({
   render: function () {
     return (
@@ -13,8 +18,8 @@ const Airport = React.createClass({
             </div>
             <div className="carousel-holder">
               <div className="arrow-holder">
-                <img className="carousel-arrow-left" src="../../assets/icon-caret-left.png"/>
-                <img className="carousel-arrow-right" src="../../assets/icon-caret-right.png"/>
+                <img onClick={this.leftHandler} className="carousel-arrow-left" src="../../assets/icon-caret-left.png"/>
+                <img onClick={this.rightHandler} className="carousel-arrow-right" src="../../assets/icon-caret-right.png"/>
               </div>
               <figure className="airport-carousel">
                 <img className="carousel-img" src="../../assets/carousel-terminal.png"/>
