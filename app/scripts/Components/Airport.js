@@ -1,4 +1,5 @@
 import React from 'react';
+import AirportCarousel from './AirportCarousel';
 
 const images = [
   '../../assets/carousel-hangars.png',
@@ -16,16 +17,7 @@ const Airport = React.createClass({
               <h1>Airports</h1>
               <span>Airports</span>
             </div>
-            <div className="carousel-holder">
-              <div className="arrow-holder">
-                <img onClick={this.leftHandler} className="carousel-arrow-left" src="../../assets/icon-caret-left.png"/>
-                <img onClick={this.rightHandler} className="carousel-arrow-right" src="../../assets/icon-caret-right.png"/>
-              </div>
-              <figure className="airport-carousel">
-                <img className="carousel-img" src="../../assets/carousel-terminal.png"/>
-                <figcaption>John F. Kennedy International Airport (JFK)<span>New York, New York</span></figcaption>
-              </figure>
-            </div>
+            <AirportCarousel images={images}/>
             <div className="airport-copy">
               <p>There are three major Airports in the New York City area, two of which are in New York and one close by in New Jersey.</p>
 

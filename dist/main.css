@@ -210,7 +210,8 @@
     margin-bottom: 2rem;
     font-size: 16px;
     line-height: 26px;
-    color: #4A4A4A; }
+    color: #4A4A4A;
+    z-index: 1; }
     .airport-holder .airport-copy .airport-highlight {
       color: #1CBEEC; }
   .airport-holder .carousel-holder {
@@ -222,7 +223,8 @@
     .airport-holder .carousel-holder .arrow-holder {
       width: 445px;
       position: absolute;
-      top: 40%; }
+      top: 40%;
+      z-index: 2; }
       .airport-holder .carousel-holder .arrow-holder .carousel-arrow-left {
         width: 18px;
         float: left; }
@@ -232,15 +234,19 @@
   .airport-holder .airport-carousel {
     width: 370px;
     box-shadow: 0 6px 30px 0 #F4F4F4;
+    margin-left: 2rem;
     margin-bottom: 4rem; }
+    .airport-holder .airport-carousel .carousel-img {
+      height: 370px;
+      object-fit: contain;
+      background-size: cover;
+      margin: 0; }
     .airport-holder .airport-carousel figcaption {
       padding: 5%;
       font-size: 14px;
       color: #4A4A4A; }
       .airport-holder .airport-carousel figcaption span {
         display: block; }
-    .airport-holder .airport-carousel .carousel-img {
-      width: 100%; }
 
 @media only screen and (max-width: 860px) {
   .airport-holder .airport-header span {

@@ -24,6 +24,7 @@
     }
     .airport-copy {
         @include copy-main-style;
+        z-index: 1;
         .airport-highlight {
             color: $highlight;
         }
@@ -38,6 +39,7 @@
             width: 445px;
             position: absolute;
             top: 40%;
+            z-index: 2;
             .carousel-arrow-left {
                 width: 18px;
                 float: left;
@@ -51,7 +53,16 @@
     .airport-carousel {
         width: 370px;
         box-shadow: $boxshadow;
+        margin-left: 2rem;
         margin-bottom: 4rem;
+
+        .carousel-img {
+            height: 370px;
+            object-fit: contain;
+            background-size: cover;
+            margin: 0;
+        }
+
         figcaption {
             padding: 5%;
             font-size: 14px;
@@ -60,11 +71,10 @@
                 display: block;
             }
         }
-        .carousel-img {
-            width: 100%;
-        }
     }
 }
+
+
 @media only screen and (max-width: 860px) {
     .airport-holder {
         .airport-header {
