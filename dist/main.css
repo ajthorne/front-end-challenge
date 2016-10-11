@@ -105,8 +105,11 @@
     padding-left: 0;
     box-sizing: border-box;
     display: flex; }
+    .category-container .category-list a {
+      flex-basis: 21%; }
+    .category-container .category-list a:not(:last-child) {
+      margin-right: 1.5rem; }
     .category-container .category-list li {
-      flex-basis: 21%;
       position: relative;
       text-align: center;
       padding: 3rem 2rem 2rem;
@@ -132,8 +135,6 @@
           margin: 0;
           color: #fff;
           font-size: 14px; }
-    .category-container .category-list li:not(:last-child) {
-      margin-right: 1.5rem; }
 
 @media only screen and (max-width: 975px) {
   .category-container .category-list {
@@ -231,6 +232,8 @@
       .airport-holder .carousel-holder .arrow-holder .carousel-arrow-right {
         width: 18px;
         float: right; }
+      .airport-holder .carousel-holder .arrow-holder:hover {
+        cursor: pointer; }
   .airport-holder .airport-carousel {
     width: 370px;
     box-shadow: 0 6px 30px 0 #F4F4F4;
@@ -238,7 +241,6 @@
     margin-bottom: 4rem; }
     .airport-holder .airport-carousel .carousel-img {
       height: 370px;
-      object-fit: contain;
       background-size: cover;
       margin: 0; }
     .airport-holder .airport-carousel figcaption {

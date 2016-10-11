@@ -15,9 +15,15 @@
         padding-left: 0;
         box-sizing: border-box;
         display: flex;
-        // justify-content: space-between;
+
+        a {
+          flex-basis: 21%;
+        }
+        a:not(:last-child) {
+          margin-right: 1.5rem;
+        }
+        
         li {
-            flex-basis: 21%;
             position: relative;
             text-align: center;
             padding: 3rem 2rem 2rem;
@@ -48,10 +54,6 @@
                     font-size: 14px;
                 }
             }
-        }
-
-        li:not(:last-child) {
-          margin-right: 1.5rem;
         }
     }
 }

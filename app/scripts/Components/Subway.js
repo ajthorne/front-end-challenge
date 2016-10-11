@@ -3,7 +3,7 @@ import React from 'react';
 const Subway = React.createClass({
   render: function () {
     return (
-      <a id="subway">
+      <a id="subways">
         <section className="subway-holder">
           <div className="subway-inner-holder">
             <div className="subway-header">

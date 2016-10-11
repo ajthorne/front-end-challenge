@@ -48,6 +48,10 @@
                 width: 18px;
                 float: right;
             }
+
+            &:hover {
+              cursor: pointer;
+            }
         }
     }
     .airport-carousel {
@@ -58,7 +62,6 @@
 
         .carousel-img {
             height: 370px;
-            object-fit: contain;
             background-size: cover;
             margin: 0;
         }
