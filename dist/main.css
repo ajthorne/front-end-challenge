@@ -1,6 +1,7 @@
 .hero-container {
   background: url("../assets/bg-nyc.png") center center;
   background-repeat: no-repeat;
+  -webkit-background-size: 100%;
   background-size: cover;
   height: 760px; }
   .hero-container .hero-logo {
@@ -51,9 +52,7 @@
       padding-left: 0; }
       .hero-container .hero-content .hero-header {
         font-size: 36px;
-        line-height: 44px; }
-      .hero-container .hero-content .hero-copy {
-        font-size: 16px; } }
+        line-height: 44px; } }
 .nav-container {
   color: #4A4A4A;
   font-size: 14px;
@@ -105,6 +104,8 @@
     margin: 0 auto;
     list-style-type: none;
     padding-left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: table;
     display: -ms-flexbox;
@@ -129,7 +130,7 @@
         padding-right: 2rem; }
       .category-container .category-list li #subway-icon {
         width: 60%; }
-      .category-container .category-list li img {
+      .category-container .category-list li .category-icon {
         width: 70%; }
       .category-container .category-list li div {
         position: absolute;
@@ -148,18 +149,19 @@
 @media only screen and (min-width: 1400px) {
   .category-container .category-nav {
     display: block; }
+  .category-container .category-list a {
+    display: inline; }
   .category-container .category-list li #plane-icon {
-    max-width: 5vw; }
+    max-width: 6vw;
+    padding-right: 0; }
   .category-container .category-list li #subway-icon {
     width: 4vw; }
-  .category-container .category-list li img {
-    width: 9vw; } }
+  .category-container .category-list li .category-icon {
+    width: 5vw; } }
 @media only screen and (max-width: 975px) {
   .category-container .category-list {
     width: 90%; } }
 @media only screen and (max-width: 635px) {
-  .category-container .category-header {
-    font-size: 26px; }
   .category-container .category-list {
     width: 95%; }
     .category-container .category-list a {
@@ -171,15 +173,11 @@
     .category-container .category-header {
       font-size: 22px;
       margin-bottom: 2rem; }
-    .category-container .category-list a {
-      padding: 2rem 1rem 1rem; }
-      .category-container .category-list a div p {
-        font-size: 10px; } }
+    .category-container .category-list a div p {
+      font-size: 10px; } }
 @media only screen and (max-width: 480px) {
   .category-container .category-list a {
-    padding: 1rem 1rem 0.5rem; }
-  .category-container .category-list li div p {
-    font-size: 10px; } }
+    padding: 1rem 1rem 0.5rem; } }
 @media only screen and (max-width: 400px) {
   .category-container {
     padding-bottom: 5rem;
@@ -236,6 +234,8 @@
   .airport-holder .carousel-holder {
     float: right;
     width: 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin-left: 3rem;
     position: relative; }
@@ -259,6 +259,7 @@
     margin-bottom: 4rem; }
     .airport-holder .airport-carousel .carousel-img {
       height: 370px;
+      -webkit-background-size: 100%;
       background-size: cover;
       margin: 0; }
     .airport-holder .airport-carousel figcaption {
@@ -413,6 +414,8 @@
     line-height: 26px;
     color: #4A4A4A; }
   .subway-holder .subway-copy {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin-bottom: 5rem; }
     .subway-holder .subway-copy .subway-map-holder {
@@ -439,6 +442,8 @@
     text-align: center;
     margin-bottom: 5rem; }
   .subway-holder .subway-howtocopy .subway-flexholder {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box; }
     .subway-holder .subway-howtocopy .subway-flexholder .subway-flexcopy {
       display: inline-block;

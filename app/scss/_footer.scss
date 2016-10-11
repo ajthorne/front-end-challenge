@@ -1,15 +1,13 @@
 footer {
-  @include centeredholder;
-  @include copy-main-style;
-  text-align: center;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-
-  .footer-info {
+    @include centeredholder;
+    @include copy-main-style;
+    text-align: center;
+    margin-top: 5rem;
     margin-bottom: 5rem;
-  }
-
-  .footer-copyright {
-    font-weight: bold;
-  }
+    .footer-info {
+        margin-bottom: 5rem;
+    }
+    .footer-copyright {
+        font-weight: bold;
+    }
 }

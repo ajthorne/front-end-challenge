@@ -32,6 +32,8 @@
     .carousel-holder {
         float: right;
         width: 50%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
         box-sizing: border-box;
         margin-left: 3rem;
         position: relative;
@@ -48,9 +50,8 @@
                 width: 18px;
                 float: right;
             }
-
             &:hover {
-              cursor: pointer;
+                cursor: pointer;
             }
         }
     }
@@ -59,13 +60,12 @@
         box-shadow: $boxshadow;
         margin-left: 2rem;
         margin-bottom: 4rem;
-
         .carousel-img {
             height: 370px;
+            -webkit-background-size: 100%;
             background-size: cover;
             margin: 0;
         }
-
         figcaption {
             padding: 5%;
             font-size: 14px;
@@ -76,13 +76,12 @@
         }
     }
 }
-
 @media only screen and (max-width: 860px) {
     .airport-holder {
         .airport-header {
             span {
-              font-size: 20vw;
-              top: -40%;
+                font-size: 20vw;
+                top: -40%;
             }
         }
         .carousel-holder {
@@ -104,44 +103,37 @@
                 font-size: 12px;
             }
             .carousel-img {
-              height: 45vh;
+                height: 45vh;
             }
         }
     }
 }
-
 @media only screen and (max-width: 635px) {
-  .airport-holder {
-    .airport-carousel {
-
-        .carousel-img {
-          height: 34vh;
+    .airport-holder {
+        .airport-carousel {
+            .carousel-img {
+                height: 34vh;
+            }
         }
     }
-  }
 }
-
 @media only screen and (max-width:480px) {
     .airport-holder {
         .airport-header {
             span {
-              top: 15%;
+                top: 15%;
             }
-
             img {
-              width: 70px;
+                width: 70px;
             }
         }
-
         .airport-header::after {
-          left: 45%;
+            left: 45%;
         }
-
         .airport-carousel {
             width: 50vw;
-
             .carousel-img {
-              height: 30vh;
+                height: 30vh;
             }
         }
         .carousel-holder {

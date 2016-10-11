@@ -1,14 +1,16 @@
 import React from 'react';
 
 const AirportCarousel = React.createClass({
+  //basic slider without animations
   getInitialState: function () {
-    // console.log(this.props);
     return {
       images: this.props.images,
+      //passed from parent
       i: 0,
       slide: ''
     }
   },
+  
   leftHandler() {
     let newI;
     if (this.state.i < (this.state.images.length - 1)) {
@@ -17,15 +19,16 @@ const AirportCarousel = React.createClass({
       newI = 0;
     }
   this.setState({
-    slide: 'slide-out-left'
+    slide: 'slide-left'
   });
   window.setTimeout(() => {
     this.setState({
       i: newI,
-      slide: 'slide-in-right',
+      slide: 'slide-right',
     });
   }, 400);
 },
+
 rightHandler() {
   let newI;
   if (this.state.i > 0) {
@@ -35,19 +38,21 @@ rightHandler() {
   }
 
   this.setState({
-    slide: 'slide-out-right'
+    slide: 'slide-right'
   });
 
   window.setTimeout(() => {
     this.setState({
       i: newI,
-      slide: 'slide-in-left',
+      slide: 'slide-left',
     });
   }, 400);
 },
+
 skipToImg(e) {
   this.setState({i: e.target.value})
 },
+
 componentDidMount() {
   this.setState({i: 0});
 },

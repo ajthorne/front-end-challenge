@@ -26,6 +26,8 @@
         @include copy-main-style;
     }
     .subway-copy {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
         box-sizing: border-box;
         margin-bottom: 5rem;
         .subway-map-holder {
@@ -65,6 +67,8 @@
             //removed flexbox formatting for IE9 support
             // flex-wrap: wrap;
             // justify-content: space-between;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
             box-sizing: border-box;
             .subway-flexcopy {
                 // flex-basis: 45%;

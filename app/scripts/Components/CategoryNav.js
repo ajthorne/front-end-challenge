@@ -20,11 +20,11 @@ const CategoryNav = React.createClass({
         <h1 className="category-header">NYC Transportation Categories</h1>
         <nav className="category-nav">
           <ul className="category-list">
-            <a onClick={this.scrollHandler} href="/#airports"><li><img id="plane-icon" src="../../assets/icon-airplane.png" alt="plane icon"/><div><p>Airports</p></div></li></a>
-            <a onClick={this.scrollHandler} href="/#cabs"><li><img id="taxi-icon" src="../../assets/icon-taxi.png" alt="taxi icon"/><div><p>Cabs</p></div></li></a>
-            <a onClick={this.scrollHandler} href="/#subway"><li><img id="subway-icon" src="../../assets/icon-subway.png" alt="subway icon"/><div><p>Subways</p></div></li></a>
-            <a href="#"><li><img id="bus-icon" src="../../assets/icon-bus.png" alt="bus icon"/><div><p>Bus</p></div></li></a>
-            <a href="#"><li><img id="car-icon" src="../../assets/icon-car.png" alt="car icon"/><div><p>Cars</p></div></li></a>
+            <a onClick={this.scrollHandler} href="/#airports"><li><img id="plane-icon" src="../../assets/icon-airplane.png" alt="plane icon"/><div className="subway-after-holder"><p>Airports</p></div></li></a>
+            <a onClick={this.scrollHandler} href="/#cabs"><li><img className="category-icon" src="../../assets/icon-taxi.png" alt="taxi icon"/><div className="subway-after-holder"><p>Cabs</p></div></li></a>
+            <a onClick={this.scrollHandler} href="/#subway"><li><img id="subway-icon" src="../../assets/icon-subway.png" alt="subway icon"/><div className="subway-after-holder"><p>Subways</p></div></li></a>
+            <a href="#"><li><img className="category-icon" src="../../assets/icon-bus.png" alt="bus icon"/><div className="subway-after-holder"><p>Bus</p></div></li></a>
+            <a href="#"><li><img className="category-icon" src="../../assets/icon-car.png" alt="car icon"/><div className="subway-after-holder"><p>Cars</p></div></li></a>
           </ul>
         </nav>
       </section>
