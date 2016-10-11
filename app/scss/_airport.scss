@@ -104,8 +104,22 @@
             figcaption {
                 font-size: 12px;
             }
+            .carousel-img {
+              height: 45vh;
+            }
         }
     }
+}
+
+@media only screen and (max-width: 635px) {
+  .airport-holder {
+    .airport-carousel {
+
+        .carousel-img {
+          height: 34vh;
+        }
+    }
+  }
 }
 
 @media only screen and (max-width:480px) {
@@ -119,8 +133,17 @@
               width: 70px;
             }
         }
+
+        .airport-header::after {
+          left: 45%;
+        }
+
         .airport-carousel {
             width: 50vw;
+
+            .carousel-img {
+              height: 30vh;
+            }
         }
         .carousel-holder {
             float: none;

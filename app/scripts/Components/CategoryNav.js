@@ -9,8 +9,10 @@ const CategoryNav = React.createClass({
     $('html,body').animate({
         scrollTop: $(`#${clickSection}`).offset().top},
         'slow');
+    //Using jQuery here because React does not handle 'smooth scrolling' easily. I believe this is because
+    //it handles the view only. Ideally, I would choose not to mix jQuery and React since they both deal with DOM
+    //manipulation. Previously, I've used an open source code to achieve the 'smooth scroll' effect with React.
   },
-
 
   render: function () {
     return (

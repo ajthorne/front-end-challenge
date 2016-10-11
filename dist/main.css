@@ -106,15 +106,15 @@
     box-sizing: border-box;
     display: flex; }
     .category-container .category-list a {
-      flex-basis: 21%; }
+      flex-basis: 21%;
+      box-shadow: 0 0 10px 0 #F4F4F4;
+      position: relative;
+      padding: 3rem 2rem 2rem;
+      border-radius: 5px; }
     .category-container .category-list a:not(:last-child) {
       margin-right: 1.5rem; }
     .category-container .category-list li {
-      position: relative;
-      text-align: center;
-      padding: 3rem 2rem 2rem;
-      border-radius: 5px;
-      box-shadow: 0 0 10px 0 #F4F4F4; }
+      text-align: center; }
       .category-container .category-list li #plane-icon {
         width: 110%;
         padding-right: 2rem; }
@@ -265,14 +265,23 @@
   .airport-holder .airport-carousel {
     width: 35vw; }
     .airport-holder .airport-carousel figcaption {
-      font-size: 12px; } }
+      font-size: 12px; }
+    .airport-holder .airport-carousel .carousel-img {
+      height: 45vh; } }
+@media only screen and (max-width: 635px) {
+  .airport-holder .airport-carousel .carousel-img {
+    height: 34vh; } }
 @media only screen and (max-width: 480px) {
   .airport-holder .airport-header span {
     top: 15%; }
   .airport-holder .airport-header img {
     width: 70px; }
+  .airport-holder .airport-header::after {
+    left: 45%; }
   .airport-holder .airport-carousel {
     width: 50vw; }
+    .airport-holder .airport-carousel .carousel-img {
+      height: 30vh; }
   .airport-holder .carousel-holder {
     float: none;
     margin-left: 0; }

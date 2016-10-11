@@ -18,17 +18,17 @@
 
         a {
           flex-basis: 21%;
+          box-shadow: 0 0 10px 0 #F4F4F4;
+          position: relative;
+          padding: 3rem 2rem 2rem;
+          border-radius: 5px;
         }
         a:not(:last-child) {
           margin-right: 1.5rem;
         }
-        
+
         li {
-            position: relative;
             text-align: center;
-            padding: 3rem 2rem 2rem;
-            border-radius: 5px;
-            box-shadow: 0 0 10px 0 #F4F4F4;
             #plane-icon {
                 width: 110%;
                 padding-right: 2rem;
