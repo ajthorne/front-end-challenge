@@ -7,13 +7,13 @@ const Subway = React.createClass({
         <section className="subway-holder">
           <div className="subway-inner-holder">
             <div className="subway-header">
-              <img src="../../assets/icon-subway.png"/>
+              <img src="../../assets/icon-subway.png" alt="subway icon"/>
               <h1>Subways</h1>
               <span>Subways</span>
             </div>
             <div className="subway-copy">
               <figure className="subway-map-holder">
-                <img src="../../assets/nyc-transit-map.png"/>
+                <img src="../../assets/nyc-transit-map.png" alt="nyc subway map"/>
                 <figcaption>New York City Subway System<p>New York City, New York</p></figcaption>
               </figure>
 

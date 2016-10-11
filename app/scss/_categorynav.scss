@@ -9,19 +9,30 @@
         text-align: center;
         margin-bottom: 4rem;
     }
+
+    .category-nav {
+      display: table;
+    }
     .category-list {
         @include centeredholder;
         list-style-type: none;
         padding-left: 0;
         box-sizing: border-box;
+        display: table; //IE9 support
+        display: -ms-flexbox; //IE10 support
         display: flex;
+        border-collapse: separate; //for table spacing
+        border-spacing: 1.5rem; //for table spacing
 
         a {
+          display: table-cell; //IE9 support
+          width: 20%;
           flex-basis: 21%;
           box-shadow: 0 0 10px 0 #F4F4F4;
           position: relative;
           padding: 3rem 2rem 2rem;
           border-radius: 5px;
+          text-decoration: none;
         }
         a:not(:last-child) {
           margin-right: 1.5rem;
@@ -57,6 +68,27 @@
         }
     }
 }
+@media only screen and (min-width: 1400px) {
+  .category-container {
+    .category-nav {
+      display: block;
+    }
+    .category-list {
+      li {
+        #plane-icon {
+            max-width: 5vw;
+        }
+        #subway-icon {
+            width: 4vw;
+        }
+        img {
+            width: 9vw;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 975px) {
     .category-container {
         .category-list {
@@ -71,15 +103,15 @@
         }
         .category-list {
             width: 95%;
-            li {
+            a {
                 padding: 2rem 1rem 1rem;
             }
         }
     }
 }
+
 @media only screen and (max-width: 525px) {
     .category-container {
-        // padding-bottom: 8rem;
         margin-bottom: 8rem;
         margin-top: 5rem;
         .category-header {
@@ -87,7 +119,7 @@
             margin-bottom: 2rem;
         }
         .category-list {
-            li {
+            a {
                 padding: 2rem 1rem 1rem;
                 div {
                     p {
@@ -101,8 +133,10 @@
 @media only screen and (max-width: 480px) {
     .category-container {
         .category-list {
+          a {
+            padding: 1rem 1rem 0.5rem;
+          }
             li {
-                padding: 1rem 1rem 0.5rem;
                 div {
                     p {
                         font-size: 10px;
@@ -121,17 +155,19 @@
         font-size: 18px;
     }
     .category-list {
-      li {
+      a {
         padding: 0.5rem 0.5rem 0.3rem;
+      }
 
-      #plane-icon {
-        padding-right: 0;
-        }
+      li {
+        #plane-icon {
+          padding-right: 0;
+          }
 
-        div {
-          display: none;
+          div {
+            display: none;
+          }
         }
       }
     }
   }
-}

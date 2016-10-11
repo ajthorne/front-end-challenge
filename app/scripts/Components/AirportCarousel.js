@@ -56,11 +56,11 @@ render: function () {
     return (
       <div className="carousel-holder">
         <div className="arrow-holder">
-          <img onClick={this.leftHandler} className="carousel-arrow-left" src="../../assets/icon-caret-left.png"/>
-          <img onClick={this.rightHandler} className="carousel-arrow-right" src="../../assets/icon-caret-right.png"/>
+          <img onClick={this.leftHandler} className="carousel-arrow-left" src="../../assets/icon-caret-left.png" alt="left arrow"/>
+          <img onClick={this.rightHandler} className="carousel-arrow-right" src="../../assets/icon-caret-right.png" alt="right arrow"/>
         </div>
         <div className="airport-carousel">
-          <figure className="carousel-img" id={this.state.slide} style={{backgroundImage:`url(${this.state.images[this.state.i]})`}}>
+          <figure className="carousel-img" alt="jfk airport img" id={this.state.slide} style={{backgroundImage:`url(${this.state.images[this.state.i]})`}}>
           </figure>
           <figcaption>John F. Kennedy International Airport (JFK)<span>New York, New York</span></figcaption>
         </div>

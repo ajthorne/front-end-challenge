@@ -61,17 +61,24 @@
             margin-bottom: 5rem;
         }
         .subway-flexholder {
-            display: flex;
-            flex-wrap: wrap;
+            // display: flex;
+            //removed flexbox formatting for IE9 support
+            // flex-wrap: wrap;
+            // justify-content: space-between;
             box-sizing: border-box;
-            justify-content: space-between;
             .subway-flexcopy {
-                flex-basis: 45%;
+                // flex-basis: 45%;
+                display: inline-block;
+                width: 45%;
+                vertical-align: top;
+            }
+            .subway-flexcopy:nth-of-type(2n+1) {
+                margin-right: 4rem;
             }
         }
     }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 915px) {
     .subway-holder {
         .subway-header {
             span {
@@ -83,6 +90,19 @@
             .subway-map-holder {
                 width: 45vw;
                 margin-left: 3rem;
+            }
+        }
+        .subway-howtocopy {
+            .subway-flexholder {
+                .subway-flexcopy {
+                    // flex-basis: 45%;
+                    // display: inline-block;
+                    width: 40%;
+                    // vertical-align: top;
+                }
+            }
+            .subway-flexcopy:nth-of-type(2n+1) {
+                margin-right: 3rem;
             }
         }
     }
@@ -104,56 +124,53 @@
 }
 @media only screen and (max-width: 520px) {
     .subway-holder {
-      .subway-header {
-        span {
-          top:0;
+        .subway-header {
+            span {
+                top: 0;
+            }
         }
-      }
-      .subway-copy {
-          .subway-map-holder {
-            figcaption {
-              font-size: 11px;
+        .subway-copy {
+            .subway-map-holder {
+                figcaption {
+                    font-size: 11px;
+                }
+                p {
+                    font-size: 11px;
+                }
             }
-            p {
-              font-size: 11px;
-            }
-
-          }
         }
         .subway-howtocopy {
             .subway-flexholder {
                 .subway-flexcopy {
-                    flex-basis: 100%;
+                    // flex-basis: 100%;
+                    width: 100%;
                 }
             }
         }
     }
 }
-
 @media only screen and (max-width: 400px) {
-  .subway-holder {
-    .subway-header {
-      margin-bottom: 5rem;
-
-      h1 {
-        font-size: 36px;
-      }
-      span {
-        top: 15px;
-      }
-      img {
-        width: 30px;
-      }
+    .subway-holder {
+        .subway-header {
+            margin-bottom: 5rem;
+            h1 {
+                font-size: 36px;
+            }
+            span {
+                top: 15px;
+            }
+            img {
+                width: 30px;
+            }
+        }
+        .subway-header::after {
+            left: 45%;
+        }
+        .subway-copy {
+            .subway-map-holder {
+                float: none;
+                width: 60vw;
+            }
+        }
     }
-
-    .subway-header::after {
-      left: 45%;
-    }
-    .subway-copy {
-      .subway-map-holder {
-        float:none;
-        width: 60vw;
-      }
-    }
-  }
 }

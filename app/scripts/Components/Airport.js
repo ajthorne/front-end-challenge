@@ -13,7 +13,7 @@ const Airport = React.createClass({
         <section className="airport-holder">
           <div className="airport-inner-holder">
             <div className="airport-header">
-              <img src="../../assets/icon-airplane.png"/>
+              <img src="../../assets/icon-airplane.png" alt="plane icon"/>
               <h1>Airports</h1>
               <span>Airports</span>
             </div>

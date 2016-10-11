@@ -7,7 +7,7 @@ const Cab = React.createClass({
         <section className="cab-holder">
           <div className="cab-inner-holder">
             <div className="cab-header">
-              <img src="../../assets/icon-taxi.png"/>
+              <img src="../../assets/icon-taxi.png" alt="taxi icon"/>
               <h1>Cabs</h1>
               <span>Cabs</span>
             </div>
